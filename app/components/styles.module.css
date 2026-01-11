@@ -1,0 +1,48 @@
+.inputContainer {
+  position: relative;
+  width: 320px;
+}
+
+.input {
+  width: 100%;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid gray;
+  font-size: 16px;
+}
+
+.suggestions {
+  width: 100%;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  max-height: 114px;
+  overflow: auto;
+}
+
+.suggestion {
+  cursor: pointer;
+}
+
+.suggestion span {
+  font-weight: 700;
+}
+
+.loading,
+.error,
+.noData {
+  text-align: center;
+  font-size: 12px;
+}
+
+.error {
+  color: #ef5350;
+}
